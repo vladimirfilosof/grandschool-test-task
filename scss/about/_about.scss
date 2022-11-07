@@ -1,0 +1,17 @@
+@import "documents";
+
+.about-text {
+  font-size: var(--large-text-font-size);
+  line-height: 164%;
+}
+
+.about {
+  display: flex;
+  gap: 64px;
+  &__col {
+    flex: 1;
+  }
+  @include media-breakpoint-down(xxl) {
+    flex-direction: column;
+  }
+}

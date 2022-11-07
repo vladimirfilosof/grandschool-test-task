@@ -1,0 +1,25 @@
+.documents {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+}
+
+.document {
+  padding: 54px 16px 32px;
+  border-radius: 16px;
+  background-color: $pale3;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    height: 375px;
+    max-width: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+}

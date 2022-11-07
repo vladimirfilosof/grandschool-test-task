@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+
+  &__btn {
+    background: $secondary;
+    border-radius: 8px;
+    padding: 6px;
+    display: flex;
+    svg {
+      height: 48px;
+      width: 48px;
+      fill: $primary;
+    }
+  }
+}

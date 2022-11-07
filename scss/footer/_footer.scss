@@ -1,0 +1,53 @@
+@import "socials";
+
+.footer {
+  background: $bg;
+
+  .contact-link {
+    color: $primary;
+    font-weight: 500;
+    svg {
+      fill: $primary;
+    }
+  }
+
+  &__row {
+    margin-bottom: 26px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include media-breakpoint-down(xxl) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__col {
+    .h3-like {
+      margin-bottom: 26px;
+    }
+    &--center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include media-breakpoint-down(lg) {
+        justify-content: start;
+        align-items: start;
+      }
+    }
+  }
+  &__link {
+    margin-bottom: 16px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

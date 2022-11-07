@@ -1,0 +1,51 @@
+.newsletter-subscription {
+  display: flex;
+  background: $pale3;
+  border-radius: 32px;
+
+  &__form {
+    width: 45%;
+    padding: 32px;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+    .h3-like {
+      margin-bottom: 24px;
+    }
+
+    .input {
+      margin-bottom: 12px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .btn {
+      margin-top: 24px;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__image {
+    width: 55%;
+    padding: 0 32px 32px;
+    //height: 100%;
+    position: relative;
+    border-left: 1px solid $pale2;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+
+    img {
+      position: absolute;
+      height: calc(100% - 32px);
+      max-width: calc(100% - 100px);
+      object-fit: contain;
+      object-position: top;
+      top: 0;
+    }
+  }
+}

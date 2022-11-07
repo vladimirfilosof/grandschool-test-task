@@ -1,0 +1,31 @@
+.search-input {
+  padding: 8px 12px 8px 44px;
+  background: url("../assets/svg/search.svg") no-repeat scroll 12px center;
+  width: 100%;
+  border: 1px solid $pale2;
+  border-radius: 8px;
+
+  font-size: var(--common-font-size);
+  line-height: 156%;
+  color: $olive;
+
+  &::placeholder {
+    color: $pale;
+  }
+}
+
+.input {
+  padding: 16px;
+
+  width: 100%;
+  border: 1px solid $pale2;
+  border-radius: 8px;
+
+  font-size: var(--common-font-size);
+  line-height: 156%;
+  color: $olive;
+
+  &::placeholder {
+    color: $pale;
+  }
+}

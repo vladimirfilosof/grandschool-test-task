@@ -1,0 +1,28 @@
+.logo-ticker-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.logo-ticker {
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
+  width: -moz-fit-content;
+  //animation: 10s linear 0.5s infinite marquee;
+  transform: translate(0%, 0);
+
+  &__item {
+    height: 100px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0%, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}

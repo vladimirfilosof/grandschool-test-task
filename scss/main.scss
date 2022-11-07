@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+@import "variables";
+@import "mixins/breakpoints";
+@import "container";
+@import "typography";
+@import "buttons";
+@import "header/header";
+@import "form/form";
+@import "about/about";
+@import "cards/cards";
+@import "logo-ticker";
+@import "edication-info";
+@import "footer/footer";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: var(--common-font-size);
+  line-height: 156%;
+  font-weight: 400;
+  color: $olive;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

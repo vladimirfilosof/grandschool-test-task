@@ -1,0 +1,30 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+
+  $this: &;
+
+  &__item {
+    font-size: var(--menu-font-size);
+    line-height: 156%;
+    font-weight: 400;
+
+    margin-right: 32px;
+    display: inline-block;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &--active {
+      #{$this}__link {
+        color: $primary-dark;
+      }
+    }
+  }
+
+  &__link {
+    color: $olive;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,36 @@
+.h1-like {
+  font-size: var(--header-large-font-size);
+  line-height: 119%;
+  font-weight: 800;
+  margin-bottom: var(--header-margin);
+}
+
+.h2-like {
+  font-size: var(--header-middle-font-size);
+  line-height: 128%;
+  font-weight: 500;
+  margin-bottom: var(--header-margin);
+}
+
+.h3-like {
+  font-size: var(--header-small-font-size);
+  font-weight: 500;
+  line-height: 128%;
+}
+
+.default-text {
+  font-size: 18px;
+  line-height: 156%;
+}
+
+.default-bold-text {
+  font-size: var(--common-font-size);
+  line-height: 156%;
+  font-weight: 600;
+}
+
+.small-text {
+  font-size: var(--common-font-size);
+  line-height: 156%;
+  font-weight: 600;
+}
